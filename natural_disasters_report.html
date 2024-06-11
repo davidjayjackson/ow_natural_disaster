@@ -1,0 +1,775 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Natural Disasters Data Report</title>
+    <style>
+        body {font-family: Arial, sans-serif; margin: 0; padding: 20px;}
+        .container {width: 100%; max-width: 1200px; margin: 0 auto;}
+        h1 {text-align: center;}
+        .section {margin-bottom: 40px;}
+        .section img {width: 100%;}
+        .section table {width: 100%; border-collapse: collapse;}
+        .section table, .section th, .section td {border: 1px solid #ddd; padding: 8px;}
+        .section th {background-color: #f2f2f2; text-align: left;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Natural Disasters Data Report</h1>
+
+        <div class="section">
+            <h2>Trend of Natural Disasters Over the Years</h2>
+            <img src="trend_plot.png" alt="Trend of Natural Disasters Over the Years">
+        </div>
+
+        <div class="section">
+            <h2>Boxplot of Number of Natural Disaster Events by Year</h2>
+            <img src="boxplot.png" alt="Boxplot of Number of Natural Disaster Events by Year">
+        </div>
+
+        <div class="section">
+            <h2>Percentage of Total Natural Disaster Events by Type</h2>
+            <img src="percentage_plot.png" alt="Percentage of Total Natural Disaster Events by Type with Average Line">
+        </div>
+
+        <div class="section">
+            <h2>Correlation Analysis</h2>
+            <table>
+                <tr>
+                    <th>Disaster</th>
+                    <th>Compared With</th>
+                    <th>Correlation Coefficient</th>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Drought</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Drought</td>
+                    <td>0.38529802313029865</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Drought</td>
+                    <td>0.785833669387694</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Drought</td>
+                    <td>0.6714915636371905</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Drought</td>
+                    <td>0.7929622662452823</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Drought</td>
+                    <td>0.7595951648969393</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Drought</td>
+                    <td>-0.08345035349979904</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Drought</td>
+                    <td>0.19048612858814867</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Drought</td>
+                    <td>0.6945797065745736</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Drought</td>
+                    <td>0.7892166695064657</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Drought</td>
+                    <td>0.7771655765531488</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Dry_mass_movement</td>
+                    <td>0.38529802313029865</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Dry_mass_movement</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Dry_mass_movement</td>
+                    <td>0.3548190961061918</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Dry_mass_movement</td>
+                    <td>0.20081271633900968</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Dry_mass_movement</td>
+                    <td>0.3675375187117977</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Dry_mass_movement</td>
+                    <td>0.22681198625190618</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Dry_mass_movement</td>
+                    <td>-0.0412445010997556</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Dry_mass_movement</td>
+                    <td>-0.0678092371513776</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Dry_mass_movement</td>
+                    <td>0.36010142671185885</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Dry_mass_movement</td>
+                    <td>0.2924031353635188</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Dry_mass_movement</td>
+                    <td>0.1994627492336762</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Earthquake</td>
+                    <td>0.785833669387694</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Earthquake</td>
+                    <td>0.3548190961061918</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Earthquake</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Earthquake</td>
+                    <td>0.7213175493324769</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Earthquake</td>
+                    <td>0.893267854078137</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Earthquake</td>
+                    <td>0.8211872817204959</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Earthquake</td>
+                    <td>0.0004849426973338977</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Earthquake</td>
+                    <td>0.2392707219051588</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Earthquake</td>
+                    <td>0.6932899150942743</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Earthquake</td>
+                    <td>0.7792802144722898</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Earthquake</td>
+                    <td>0.7909881920145377</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Extreme_temperature</td>
+                    <td>0.6714915636371905</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Extreme_temperature</td>
+                    <td>0.20081271633900968</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Extreme_temperature</td>
+                    <td>0.7213175493324769</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Extreme_temperature</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Extreme_temperature</td>
+                    <td>0.7444801629001606</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Extreme_temperature</td>
+                    <td>0.8275264123900301</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Extreme_temperature</td>
+                    <td>-0.05105078823756295</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Extreme_temperature</td>
+                    <td>0.12771141118523818</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Extreme_temperature</td>
+                    <td>0.5826405599326054</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Extreme_temperature</td>
+                    <td>0.727624456306673</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Extreme_temperature</td>
+                    <td>0.6932654592923388</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Extreme_weather</td>
+                    <td>0.7929622662452823</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Extreme_weather</td>
+                    <td>0.3675375187117977</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Extreme_weather</td>
+                    <td>0.893267854078137</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Extreme_weather</td>
+                    <td>0.7444801629001606</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Extreme_weather</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Extreme_weather</td>
+                    <td>0.9213804645314896</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Extreme_weather</td>
+                    <td>-0.06172728046676607</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Extreme_weather</td>
+                    <td>0.2949394851202332</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Extreme_weather</td>
+                    <td>0.7421715189120736</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Extreme_weather</td>
+                    <td>0.8663681658730736</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Extreme_weather</td>
+                    <td>0.8241270110678636</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Flood</td>
+                    <td>0.7595951648969393</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Flood</td>
+                    <td>0.22681198625190618</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Flood</td>
+                    <td>0.8211872817204959</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Flood</td>
+                    <td>0.8275264123900301</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Flood</td>
+                    <td>0.9213804645314896</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Flood</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Flood</td>
+                    <td>-0.0604114042304509</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Flood</td>
+                    <td>0.33455945633246215</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Flood</td>
+                    <td>0.760118758329137</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Flood</td>
+                    <td>0.8543115564820859</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Flood</td>
+                    <td>0.8351503775185168</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Fog</td>
+                    <td>-0.08345035349979904</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Fog</td>
+                    <td>-0.0412445010997556</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Fog</td>
+                    <td>0.0004849426973338977</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Fog</td>
+                    <td>-0.05105078823756295</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Fog</td>
+                    <td>-0.06172728046676607</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Fog</td>
+                    <td>-0.0604114042304509</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Fog</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Fog</td>
+                    <td>-0.013258705333397734</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Fog</td>
+                    <td>-0.04217324101672209</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Fog</td>
+                    <td>-0.06161465498166826</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Fog</td>
+                    <td>-0.056827558129177565</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>0.19048612858814867</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>-0.0678092371513776</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>0.2392707219051588</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>0.12771141118523818</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>0.2949394851202332</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>0.33455945633246215</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>-0.013258705333397734</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>0.2542701039373242</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>0.1722161350917621</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>0.3314690740264919</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Volcanic_activity</td>
+                    <td>0.6945797065745736</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Volcanic_activity</td>
+                    <td>0.36010142671185885</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Volcanic_activity</td>
+                    <td>0.6932899150942743</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Volcanic_activity</td>
+                    <td>0.5826405599326054</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Volcanic_activity</td>
+                    <td>0.7421715189120736</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Volcanic_activity</td>
+                    <td>0.760118758329137</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Volcanic_activity</td>
+                    <td>-0.04217324101672209</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Volcanic_activity</td>
+                    <td>0.2542701039373242</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Volcanic_activity</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Volcanic_activity</td>
+                    <td>0.6679948289597791</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Volcanic_activity</td>
+                    <td>0.6601648343276948</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Wet_mass_movement</td>
+                    <td>0.7892166695064657</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Wet_mass_movement</td>
+                    <td>0.2924031353635188</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Wet_mass_movement</td>
+                    <td>0.7792802144722898</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Wet_mass_movement</td>
+                    <td>0.727624456306673</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Wet_mass_movement</td>
+                    <td>0.8663681658730736</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Wet_mass_movement</td>
+                    <td>0.8543115564820859</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Wet_mass_movement</td>
+                    <td>-0.06161465498166826</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Wet_mass_movement</td>
+                    <td>0.1722161350917621</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Wet_mass_movement</td>
+                    <td>0.6679948289597791</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Wet_mass_movement</td>
+                    <td>1.0</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Wet_mass_movement</td>
+                    <td>0.7721292790274525</td>
+                </tr>
+                
+                <tr>
+                    <td>Drought</td>
+                    <td>Wildfire</td>
+                    <td>0.7771655765531488</td>
+                </tr>
+                
+                <tr>
+                    <td>Dry_mass_movement</td>
+                    <td>Wildfire</td>
+                    <td>0.1994627492336762</td>
+                </tr>
+                
+                <tr>
+                    <td>Earthquake</td>
+                    <td>Wildfire</td>
+                    <td>0.7909881920145377</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_temperature</td>
+                    <td>Wildfire</td>
+                    <td>0.6932654592923388</td>
+                </tr>
+                
+                <tr>
+                    <td>Extreme_weather</td>
+                    <td>Wildfire</td>
+                    <td>0.8241270110678636</td>
+                </tr>
+                
+                <tr>
+                    <td>Flood</td>
+                    <td>Wildfire</td>
+                    <td>0.8351503775185168</td>
+                </tr>
+                
+                <tr>
+                    <td>Fog</td>
+                    <td>Wildfire</td>
+                    <td>-0.056827558129177565</td>
+                </tr>
+                
+                <tr>
+                    <td>Glacial_lake_outburst_flood</td>
+                    <td>Wildfire</td>
+                    <td>0.3314690740264919</td>
+                </tr>
+                
+                <tr>
+                    <td>Volcanic_activity</td>
+                    <td>Wildfire</td>
+                    <td>0.6601648343276948</td>
+                </tr>
+                
+                <tr>
+                    <td>Wet_mass_movement</td>
+                    <td>Wildfire</td>
+                    <td>0.7721292790274525</td>
+                </tr>
+                
+                <tr>
+                    <td>Wildfire</td>
+                    <td>Wildfire</td>
+                    <td>1.0</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+</body>
+</html>
